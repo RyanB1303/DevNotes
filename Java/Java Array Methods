@@ -1,0 +1,11 @@
+# Java Array Methods Explanation
+
+## **Arrays.sort()**  
+uses an algorithm called double-pivot quicksort to sort large
+arrays. For smaller arrays, it uses a combination of *Insertion sort* and *Merge sort*.
+It is better to trust that Arrays.sort() is <mark>optimized</mark> to each use case instead
+of implementing your own sorting algorithm. 
+## **Arrays.binarySearch()**  
+uses an algorithm called *binary search* to look for an item in the array. 
+It first requires that the array be sorted, and that is why we called Arrays.sort() first. 
+Binary search splits the sorted array into two equal halves recursively until it can no longer divide the array, at which point that value is the answer.
